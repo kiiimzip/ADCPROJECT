@@ -70,23 +70,23 @@ function setup() {
 
     // Create, position, and style the Classic Button
     let classicButton = createButton('CLASSIC');
-    classicButton.position(35, 225);
+    classicButton.position(35, 200);
     classicButton.mousePressed(() => playGenre(classicSound));
     styleButton(classicButton);  // Apply the CSS styles
 
     // ... Repeat for other genre buttons and apply styles
     let rockButton = createButton('ROCK');
-    rockButton.position(135, 225);
+    rockButton.position(125, 200);
     rockButton.mousePressed(() => playGenre(rockSound));
     styleButton(rockButton);
 
     let jazzButton = createButton('JAZZ');
-    jazzButton.position(220, 225);
+    jazzButton.position(193, 200);
     jazzButton.mousePressed(() => playGenre(jazzSound));
     styleButton(jazzButton);
 
     let rnbButton = createButton('R&B');
-    rnbButton.position(300, 225);
+    rnbButton.position(256, 200);
     rnbButton.mousePressed(() => playGenre(rnbSound));
     styleButton(rnbButton);
 }
@@ -167,12 +167,12 @@ function draw() {
     textSize(15);
 
     fill(0,0,0);
-    text('PITCH: ' + pitchValue, -790, -463);
+    text('PITCH: ' + pitchValue, -790, -378 );
    
-    text('VOLUME: ' + volumeValue, -790, -433);
+    text('VOLUME: ' + volumeValue, -790, -348);
    
     let shapeName = ['CIRCLE', 'SQUARE', 'HEXAGON', 'DIAMOND'];
-    text('SHAPE: ' + shapeName[shapeValue], -790, -403);
+    text('SHAPE: ' + shapeName[shapeValue], -790, -318);
     
     pop();  // Restore the previous graphics state.
 }
